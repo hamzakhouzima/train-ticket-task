@@ -28,8 +28,8 @@
    <span> </span>
         <a class="navbar-brand" id="underline" href="#" style="color:black;">Contact Us</a> 
     </span>
-
-    <span class="registration">
+   <!------>
+    <span class="registration" style="display:none;">
      <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Login</a></li>
@@ -39,6 +39,36 @@
         </nav>
     </span>
     <!------>
+
+
+
+<!--######################################################################################################-->
+
+<div class="navbar-item navbar-user dropdown">
+            <a href="#" class="navbar-link dropdown-toggle d-flex align-items-center" data-bs-toggle="dropdown">
+                <img src="/storage/users/profile/thumbnail/351-1662713897.JPG" alt=""> 
+                <span>
+                    <span class="d-none d-md-inline">Logged User</span>
+                    <b class="caret"></b>
+                </span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end me-1">
+                <a href="/profile#settings" class="dropdown-item">Edit Profile</a>
+                <a href="javascript:;" class="dropdown-item d-flex align-items-center">
+                    Inbox
+                    <span class="badge bg-danger rounded-pill ms-auto pb-4px">0</span> 
+                </a>
+                <a href="javascript:;" class="dropdown-item">Calendar</a>
+                <a href="javascript:;" class="dropdown-item">Setting</a>
+                <div class="dropdown-divider"></div>
+                <a href="javascript: $('form#logout').submit();" class="dropdown-item">Log Out</a>
+				<form method="POST" action="https://intranet.youcode.ma:443/logout" id="logout">
+		          <input type="hidden" name="_token" value="GzSDqerF6gCGnvhgAPqpO6UCeEPuLFWSFEUBMozx">		        </form>
+            </div>
+        </div>
+<!--######################################################################################################-->
+
+
   </div>
 </nav>
 <div>   
@@ -56,6 +86,7 @@
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Some representative placeholder content for the first slide.</p>
+        <!-- <button type="button" class="btn btn-success" id="#btn-scroll" onclick="scroll()">Success</button> -->
       </div>
     </div>
     <div class="carousel-item">
@@ -284,7 +315,7 @@
 
 
 </footer>
-
+<script type="text/javascript" src="actions.js"></script>
 
 <link rel="stylesheet" href="home.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
